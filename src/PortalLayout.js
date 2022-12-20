@@ -9,10 +9,10 @@ function PortalLayout() {
       <Outlet />
       <br/><br/>
       <footer>
-        <div class="container-fluid bg-light fixed-bottom text-center">
-          <div class="row bg-light">
-            <div class="col-lg align-self-center"><br/>
-              <p class="footer__copyright">©KALANJIYARAJ</p>
+        <div className="container-fluid bg-light fixed-bottom text-center">
+          <div className="row bg-light">
+            <div className="col-lg align-self-center"><br/>
+              <p className="footer__copyright">©KALANJIYARAJ</p>
             </div>
           </div>
         </div>

@@ -1,7 +1,8 @@
 // import logo from './logo.svg';
 import "./App.css";
 import "..//node_modules/bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "..//node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
+import { BrowserRouter,Route, Routes } from "react-router-dom";
 import PortalLayout from "./PortalLayout";
 import Topbar from "./Portfolio/Topbar";
 import About from "./Portfolio/About";
@@ -13,6 +14,7 @@ import Introduction from "./Portfolio/Introduction";
 
 function App() {
   return (
+    <>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<PortalLayout />}>
@@ -26,6 +28,7 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
+    </>
   );
 }
 
