@@ -88,7 +88,7 @@ function Contact() {
           </a>
           <a href="https://www.instagram.com/" target="_blank">
             <img
-              alt="www.instagram.com"
+              alt="https://www.instagram.com/invites/contact/?i=zlybgkgymtqn&utm_content=4gucicu"
               src="https://img.icons8.com/doodle/40/000000/instagram-new--v2.png"
             />
           </a>

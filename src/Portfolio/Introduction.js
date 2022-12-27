@@ -30,7 +30,7 @@ function Introduction() {
                         src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/40/000000/external-stack-overflow-is-a-question-and-answer-site-for-professional-logo-color-tal-revivo.png"
                       />
                     </a>
-                    <a href="https://www.instagram.com/" target="_blank">
+                    <a href="https://www.instagram.com/invites/contact/?i=zlybgkgymtqn&utm_content=4gucicu" target="_blank">
                       <img
                         alt="instagram.com"
                         src="https://img.icons8.com/doodle/40/000000/instagram-new--v2.png"
