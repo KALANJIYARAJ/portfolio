@@ -70,7 +70,7 @@ function Contact() {
           <p>
             Ramapuram, Chennai-600087
             <br />
-            Tamil Nadun
+            Tamil Nadu
             <br />
             India
           </p>
