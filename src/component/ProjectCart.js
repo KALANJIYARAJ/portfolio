@@ -15,7 +15,7 @@ export const ProjectCart = ({ data }) => {
               alt="..."
             />
             <div className="card-body">
-              <h5 className="card-title">{data.projectTitle}</h5>
+              <h4 className="card-title">{data.projectTitle}</h4>
               <p className="card-text text-start ">{data.about}</p>
               <a href={data.link} className="btn btn-primary mt-1">
                 Read more
