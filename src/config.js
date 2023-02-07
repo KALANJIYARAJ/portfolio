@@ -1,4 +1,4 @@
 export const config = {
-  api: "https://pizza-app-backend-three.vercel.app",
+  api: "https://portfolio-server-ztqr.onrender.com",
   // api: "http://localhost:3003",
 };
