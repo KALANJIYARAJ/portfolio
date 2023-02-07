@@ -3,7 +3,10 @@ import React from "react";
 function Introduction() {
   return (
     <div className="container text-center mt-5">
-      <div className="row align-items-center bg-light" style={{padding:"0px"}}>
+      <div
+        className="row align-items-center bg-light"
+        style={{ padding: "0px" }}
+      >
         <div className="col-lg-8">
           <img
             src="https://images.pexels.com/photos/4974915/pexels-photo-4974915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -24,26 +27,38 @@ function Introduction() {
                 <br />
                 <div className="row">
                   <div className="col-12">
-                    <a href="https://stackoverflow.com/users/20807131/raj" target="_blank">
+                    <a
+                      href="https://stackoverflow.com/users/20807131/raj"
+                      target="_blank"
+                    >
                       <img
+                        className="me-2"
                         alt="stackoverflow.com"
                         src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/40/000000/external-stack-overflow-is-a-question-and-answer-site-for-professional-logo-color-tal-revivo.png"
                       />
                     </a>
-                    <a href="https://www.instagram.com/invites/contact/?i=zlybgkgymtqn&utm_content=4gucicu" target="_blank">
+                    {/* <a
+                      href="https://www.instagram.com/invites/contact/?i=zlybgkgymtqn&utm_content=4gucicu"
+                      target="_blank"
+                    >
                       <img
                         alt="instagram.com"
                         src="https://img.icons8.com/doodle/40/000000/instagram-new--v2.png"
                       />
-                    </a>
+                    </a> */}
                     <a href="https://github.com/KALANJIYARAJ" target="_blank">
                       <img
+                        className="me-2"
                         alt="github.com"
                         src="https://img.icons8.com/doodle/40/000000/github--v1.png"
                       />
                     </a>
-                    <a href="https://www.linkedin.com/in/kalanjiya-raj-130385169/" target="_blank">
+                    <a
+                      href="https://www.linkedin.com/in/kalanjiya-raj-130385169/"
+                      target="_blank"
+                    >
                       <img
+                        className="me-2"
                         alt="www.linkedin.com"
                         src="https://img.icons8.com/doodle/40/000000/linkedin--v2.png"
                       />

@@ -1,6 +1,22 @@
-import React from "react";
+import axios from "axios";
+import React, { useState } from "react";
+import { config } from "../config";
 
 function Contact() {
+  const [name, setName] = useState();
+  const [email, setEmail] = useState();
+  const [message, setMessage] = useState();
+  const values = { name, email, message };
+
+  const sentMessage = async () => {
+    try {
+      console.log(values);
+      const sentMail = await axios.post(`${config.api}/mail`, values);
+      alert(sentMail.data.message);
+    } catch (error) {
+      alert(error);
+    }
+  };
   return (
     <div className="container">
       <br />
@@ -24,8 +40,8 @@ function Contact() {
               <input
                 type="text"
                 className="form-control"
-                id="exampleInputEmail1"
                 aria-describedby="emailHelp"
+                onChange={(e) => setName(e.target.value)}
               />
               <div id="emailHelp" className="form-text">
                 We'll never share your email with anyone else.
@@ -38,8 +54,8 @@ function Contact() {
               <input
                 type="email"
                 className="form-control"
-                id="exampleInputEmail1"
                 aria-describedby="emailHelp"
+                onChange={(e) => setEmail(e.target.value)}
               />
               <div id="emailHelp" className="form-text">
                 We'll never share your email with anyone else.
@@ -51,11 +67,12 @@ function Contact() {
               </label>
               <textarea
                 className="form-control"
-                id="exampleFormControlTextarea1"
                 rows="3"
+                type="text"
+                onChange={(e) => setMessage(e.target.value)}
               ></textarea>
             </div>
-            <button type="submit" className="btn btn-primary">
+            <button className="btn btn-primary" onClick={() => sentMessage()}>
               Submit
             </button>
           </form>
@@ -82,18 +99,20 @@ function Contact() {
             target="_blank"
           >
             <img
+              className="me-2"
               alt="stackoverflow.com"
               src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/40/000000/external-stack-overflow-is-a-question-and-answer-site-for-professional-logo-color-tal-revivo.png"
             />
           </a>
-          <a href="https://www.instagram.com/" target="_blank">
+          {/* <a href="https://www.instagram.com/" target="_blank">
             <img
               alt="https://www.instagram.com/invites/contact/?i=zlybgkgymtqn&utm_content=4gucicu"
               src="https://img.icons8.com/doodle/40/000000/instagram-new--v2.png"
             />
-          </a>
+          </a> */}
           <a href="https://github.com/KALANJIYARAJ" target="_blank">
             <img
+              className="me-2"
               alt="github.com"
               src="https://img.icons8.com/doodle/40/000000/github--v1.png"
             />
@@ -103,6 +122,7 @@ function Contact() {
             target="_blank"
           >
             <img
+              className="me-2"
               alt="www.linkedin.com"
               src="https://img.icons8.com/doodle/40/000000/linkedin--v2.png"
             />

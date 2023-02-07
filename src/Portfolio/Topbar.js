@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 function Topbar() {
-
   const [show, setShow] = useState({
     expanded: "false",
     collapsed: "navbar-toggler btn-close-white",
@@ -51,10 +50,7 @@ function Topbar() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div
-            className={show.show}
-            id="navbarTogglerDemo01"
-          >
+          <div className={show.show} id="navbarTogglerDemo01">
             <ul className="navbar-nav mb-2 mb-lg-0">
               <li className="nav-item">
                 <Link
@@ -69,34 +65,43 @@ function Topbar() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link text-white" to={"skills"}
-                 onClick={() => {
-                  hide();
-                }}>
+                <Link
+                  className="nav-link text-white"
+                  to={"skills"}
+                  onClick={() => {
+                    hide();
+                  }}
+                >
                   Skills
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link text-white" to={"projects"}
-                 onClick={() => {
-                  hide();
-                }}>
+                <Link
+                  className="nav-link text-white"
+                  to={"projects"}
+                  onClick={() => {
+                    hide();
+                  }}
+                >
                   Projects
                 </Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link className="nav-link text-white" to={"services"}
                  onClick={() => {
                   hide();
                 }}>
                   Services
                 </Link>
-              </li>
+              </li> */}
               <li className="nav-item">
-                <Link className="nav-link text-white" to={"contact"}
-                 onClick={() => {
-                  hide();
-                }}>
+                <Link
+                  className="nav-link text-white"
+                  to={"contact"}
+                  onClick={() => {
+                    hide();
+                  }}
+                >
                   Contact
                 </Link>
               </li>
