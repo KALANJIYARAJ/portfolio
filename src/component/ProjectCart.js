@@ -1,9 +1,7 @@
 import React from "react";
 
 export const ProjectCart = ({ data }) => {
-  const images =
-    "http://localhost:3000/images/" ||
-    "https://flourishing-crumble-8d472d.netlify.app/images";
+  const images = "https://flourishing-crumble-8d472d.netlify.app/images";
 
   return (
     <div className="col-xl-4 mt-3">
@@ -12,7 +10,10 @@ export const ProjectCart = ({ data }) => {
           <div className="card p-3" style={{ maxWidth: "24rem" }}>
             <img
               src={`${images}/${data.img}`}
-              style={{ maxWidth: "22rem", maxHeight: "16rem" }}
+              style={{
+                maxWidth: "22rem",
+                maxHeight: "16rem",
+              }}
               className="card-img-top img-fluid"
               alt="..."
             />
