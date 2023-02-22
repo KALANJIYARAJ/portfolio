@@ -7,10 +7,9 @@ function Projcet() {
     <div className="container text-center">
       <br />
       <br />
-      <h1>Projects</h1>
+      <h1>My Projects</h1>
       <br />
       <br />
-      <h4 className="text-start">What I Built</h4>
 
       <div className="row justify-content-start">
         {datas.map((data) => {

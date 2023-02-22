@@ -18,11 +18,9 @@ function Introduction() {
           <div className="row   ">
             <div className="col-12">
               <div className="card-body">
-                <h1 className="card-title">Hi i am Kalanjiya Raj M</h1>
+                <h1 className="card-title">Hi, I am Kalanjiya Raj M</h1>
                 <br />
-                <h3 className="card-title">
-                  I am a Front-End & Back-End / Full-Stack Developer.
-                </h3>
+                <h3 className="card-title">I am a Full-Stack Developer.</h3>
                 <br />
                 <br />
                 <div className="row">
@@ -69,7 +67,8 @@ function Introduction() {
 
                   <div className="col-12">
                     <a
-                      href="https://docs.google.com/document/d/1_gWo4BlB1qtiB6GuaXuC2EdhW0dLie9m/edit?usp=share_link&ouid=104346778547040128571&rtpof=true&sd=true"
+                      href="https://drive.google.com/drive/folders/1FldgKsE5wup4rxKwNAfqmknQ-PSFjmcZ?usp=share_link"
+                      target={"_blank"}
                       className="btn btn-primary mt-1"
                       style={{ width: "11rem" }}
                     >
