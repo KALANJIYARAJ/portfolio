@@ -1,5 +1,5 @@
 import React from "react";
-import { ProjectCart } from "../component/ProjectCart";
+import { ProjectCart } from "../component/projectCart/ProjectCart";
 import { datas } from "../datas";
 
 function Projcet() {

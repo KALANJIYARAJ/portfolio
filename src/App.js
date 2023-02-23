@@ -10,7 +10,7 @@ import Skill from "./Portfolio/Skill";
 import Projcet from "./Portfolio/Projcet";
 
 import Contact from "./Portfolio/Contact";
-import Introduction from "./Portfolio/Introduction";
+import Introduction from "./Portfolio/introduction/Introduction";
 
 function App() {
   return (
@@ -18,7 +18,6 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<PortalLayout />}>
-            <Route path="/" element={<Topbar />}></Route>
             <Route path="/intro" element={<Introduction />}></Route>
             <Route path="about" element={<About />}></Route>
             <Route path="skills" element={<Skill />}></Route>
