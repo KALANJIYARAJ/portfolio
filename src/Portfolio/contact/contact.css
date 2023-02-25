@@ -1,0 +1,43 @@
+.introBox2IconContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.introBox2IconContainerLink {
+  cursor: pointer;
+}
+.introBox2IconContainerLinkImg:hover {
+  background-color: #0d6efd;
+}
+
+.introBox2IconContainerLinkImg {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 0.25rem solid black;
+  background-color: white;
+  padding: 0.25rem;
+  object-fit: cover;
+}
+
+.btn-primary {
+  background-color: black;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.84);
+}
+
+.btn-dark:hover {
+  background-color: #363636;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #9a9898;
+}

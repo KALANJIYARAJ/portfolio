@@ -9,7 +9,7 @@ import About from "./Portfolio/About";
 import Skill from "./Portfolio/Skill";
 import Projcet from "./Portfolio/Projcet";
 
-import Contact from "./Portfolio/Contact";
+import Contact from "./Portfolio/contact/Contact";
 import Introduction from "./Portfolio/introduction/Introduction";
 
 function App() {

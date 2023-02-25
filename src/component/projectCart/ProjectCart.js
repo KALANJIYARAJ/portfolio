@@ -1,12 +1,12 @@
 import React from "react";
 import "../projectCart/projectCart.css";
-import { imgData } from "../../imgData";
+import { config } from "../../config";
 
 export const ProjectCart = ({ data }) => {
-  const images = imgData.img;
+  const images = config.img;
 
   return (
-    <div className="col-xl-4 mt-3">
+    <div className="col-lg-6 col-xl-4 col-md-6 mt-3">
       <div className="row justify-content-center">
         <div className="col-lg-12">
           <div className="card p-3" style={{ maxWidth: "26rem" }}>
@@ -25,24 +25,24 @@ export const ProjectCart = ({ data }) => {
               <div className="btn-container">
                 <a
                   href={data.frontEnd}
-                  className="btn-class btn btn-primary"
+                  className="btn-class btn btn-dark"
                   target={"_blank"}
                 >
                   FrontEnd
                 </a>
                 <a
                   href={data.backEnd}
-                  className="btn-class btn btn-primary"
+                  className="btn-class btn btn-dark"
                   target={"_blank"}
                 >
                   BackEnd
                 </a>
                 <a
                   href={data.project}
-                  className="btn-class btn btn-primary"
+                  className="btn-class btn btn-dark"
                   target={"_blank"}
                 >
-                  View Projcet
+                  Explore
                 </a>
               </div>
               <div className="tech-container">

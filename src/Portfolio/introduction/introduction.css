@@ -1,23 +1,45 @@
-.container {
+.introContainer {
   width: 100vw;
   height: 80vh;
 }
 
-.introContainer {
+.introWrapper {
   width: 100%;
   height: 100%;
+  padding: 1rem;
   display: flex;
   flex-direction: row;
-  gap: 0.5rem;
   justify-content: center;
   align-items: center;
+  gap: 0.5rem;
 }
 
 .introBox1 {
-  flex: 2;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.introBoxImg {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1rem solid white;
+  background-color: black;
+  padding: 0.5rem;
 }
 
-.introBox1Name {
+.introBox2 {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+.introBox2Name {
   background-image: linear-gradient(
     -225deg,
     #231557 0%,
@@ -34,39 +56,124 @@
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
   display: inline-block;
-  font-size: 5rem;
-  margin: 2rem 0;
+  font-size: 4rem;
+  margin: 1rem 0;
 }
-
 @keyframes textclip {
   to {
     background-position: 200% center;
   }
 }
 
-.introBox1Postion {
+.introBox2Work {
   font-size: 3rem;
-  margin: 1rem 0;
+  margin-bottom: 1rem;
 }
 
-.introBox1Study {
-  font-size: 1.4rem;
-  margin-right: 4rem;
+.introBox2Details {
+  font-size: 1.5rem;
 }
 
-.introBox2 {
-  flex: 1;
+.introBox2IconContainer {
   display: flex;
   flex-direction: row;
-  gap: 0.5rem;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
-.introBox2Img {
-  width: 500px;
-  height: 500px;
-  object-fit: cover;
+.introBox2IconContainerLink {
+  cursor: pointer;
+}
+.introBox2IconContainerLinkImg:hover {
+  background-color: #ffffff;
+}
+
+.introBox2IconContainerLinkImg {
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
-  border: 5px solid #f25252;
+  border: 0.25rem solid black;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 0.25rem;
+  object-fit: cover;
+}
+
+.introBox2BtnContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.introBox2Btn {
+  background-color: black;
+  color: white;
+  font-size: 1.3rem;
+  border: none;
+  cursor: pointer;
+  padding: 0.75rem;
+  border-radius: 10px;
+  width: 11rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+.introBox2Btn:hover {
+  background-color: #363636;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .introContainer {
+    height: 100%;
+  }
+
+  .introWrapper {
+    flex-direction: column;
+    overflow-y: scroll;
+  }
+  .introBoxImg {
+    width: 250px;
+    height: 250px;
+  }
+  .introBox2Name {
+    font-size: 2rem;
+  }
+  .introBox2Work {
+    font-size: 1.5rem;
+  }
+  .introBox2Details {
+    font-size: 1rem;
+  }
+  .introBox2Btn {
+    font-size: 1rem;
+    padding: 0.5;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  .introWrapper {
+    flex-direction: row;
+  }
+  .introBoxImg {
+    width: 350px;
+    height: 350px;
+  }
+  .introBox2Name {
+    font-size: 2.5rem;
+  }
+  .introBox2Work {
+    font-size: 1.5rem;
+  }
+  .introBox2Details {
+    font-size: 1rem;
+  }
+  .introBox2Btn {
+    font-size: 1.1rem;
+    padding: 0.5;
+  }
 }

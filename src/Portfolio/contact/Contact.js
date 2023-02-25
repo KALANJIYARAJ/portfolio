@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
-import { config } from "../config";
+import { config } from "../../config";
+import "../contact/contact.css";
 
 function Contact() {
   const [name, setName] = useState();
@@ -72,8 +73,8 @@ function Contact() {
                 onChange={(e) => setMessage(e.target.value)}
               ></textarea>
             </div>
-            <button className="btn btn-primary" onClick={() => sentMessage()}>
-              Submit
+            <button className="btn btn-dark" onClick={() => sentMessage()}>
+              Send
             </button>
           </form>
         </div>
@@ -94,7 +95,7 @@ function Contact() {
           <br />
           <br />
           <h1>Social</h1>
-          <a
+          {/* <a
             href="https://stackoverflow.com/users/20807131/raj"
             target="_blank"
           >
@@ -104,12 +105,7 @@ function Contact() {
               src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/40/000000/external-stack-overflow-is-a-question-and-answer-site-for-professional-logo-color-tal-revivo.png"
             />
           </a>
-          {/* <a href="https://www.instagram.com/" target="_blank">
-            <img
-              alt="https://www.instagram.com/invites/contact/?i=zlybgkgymtqn&utm_content=4gucicu"
-              src="https://img.icons8.com/doodle/40/000000/instagram-new--v2.png"
-            />
-          </a> */}
+
           <a href="https://github.com/KALANJIYARAJ" target="_blank">
             <img
               className="me-2"
@@ -126,7 +122,44 @@ function Contact() {
               alt="www.linkedin.com"
               src="https://img.icons8.com/doodle/40/000000/linkedin--v2.png"
             />
-          </a>
+          </a> */}
+          <div className="introBox2IconContainer">
+            <a
+              className="introBox2IconContainerLink"
+              href="https://github.com/KALANJIYARAJ"
+              target={"_blank"}
+            >
+              <img
+                className="introBox2IconContainerLinkImg"
+                src={`${config.img}/github.png`}
+                alt="logo"
+              />
+            </a>
+
+            <a
+              className="introBox2IconContainerLink"
+              href="https://www.linkedin.com/in/kalanjiya-raj-130385169/"
+              target={"_blank"}
+            >
+              <img
+                className="introBox2IconContainerLinkImg"
+                src={`${config.img}/linkedin.png`}
+                alt="logo"
+              />
+            </a>
+
+            <a
+              className="introBox2IconContainerLink"
+              href="https://stackoverflow.com/users/20807131/raj"
+              target={"_blank"}
+            >
+              <img
+                className="introBox2IconContainerLinkImg"
+                src={`${config.img}/stack-overflow.png`}
+                alt="logo"
+              />
+            </a>
+          </div>
         </div>
       </div>
       <br />

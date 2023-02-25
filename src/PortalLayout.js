@@ -13,7 +13,7 @@ function PortalLayout() {
   }, []);
 
   return (
-    <div className="container-fluid">
+    <div style={{ width: "100vw", height: "100vh" }}>
       <Topbar />
       <Outlet />
       <br />

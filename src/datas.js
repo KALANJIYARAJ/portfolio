@@ -40,6 +40,6 @@ export const datas = [
     project: "https://hilarious-blancmange-c06dc3.netlify.app",
     tech: ["react.png", "nodejs.png", "mongodb.png", "socketio.png"],
     about:
-      "This application is to allow users to communicate with each other in real-time over the internet. It often used for personal communication between friends and family.",
+      "This application is to allow users to communicate with each other in real-time over the internet.",
   },
 ];
