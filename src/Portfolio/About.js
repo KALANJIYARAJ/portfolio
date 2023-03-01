@@ -11,16 +11,15 @@ function About() {
 
       <div className="row justify-content-start">
         <div className="col-lg-12">
-          <h3>A bit about me</h3>
-          <p>
-            I'm a self-taught web developer and Mobile App Developer with
-            experience in designing new features from ideation to production,
-            implementation of wireframes and design flows into high performance
-            software applications. I take into consideration the user experience
-            while writing reusable and efficient code. I passionately combine
-            good design, technology, and innovation in all my projects, which I
-            like to accompany from the first idea to release.Currently, I'm
-            focused on the backend development.
+          <p style={{ fontSize: "1.3rem" }}>
+            I'm a self-taught web developer. My expertise lies in developing
+            end-to-end web applications, from designing and implementing APIs to
+            creating dynamic UIs with React. I have a passion for building
+            scalable and robust web applications using cutting-edge technologies
+            and best practices. I believe in writing clean, maintainable, and
+            reusable code that can be easily understood and modified by other
+            developers. Thank you for taking the time to learn more about me. I
+            look forward to the opportunity to work with you!
           </p>
         </div>
       </div>
