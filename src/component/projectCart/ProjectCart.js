@@ -42,7 +42,7 @@ export const ProjectCart = ({ data }) => {
                   className="btn-class btn btn-dark"
                   target={"_blank"}
                 >
-                  Explore
+                  View
                 </a>
               </div>
               <div className="tech-container">
