@@ -61,7 +61,7 @@ function Introduction() {
           </div>
           <div className="introBox2BtnContainer">
             <a
-              href="https://drive.google.com/file/d/1M2h1BfObWl4xY41iL4XZSL_JtcfhnhtS/view?usp=sharing"
+              href="https://drive.google.com/file/d/1KqPlSX8sZ5J1eDXWP9RUH0oQjdB0421h/view?usp=sharing"
               className="introBox2Btn"
               target={"_blank"}
             >
