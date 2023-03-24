@@ -3,4 +3,5 @@ export const config = {
   // api: "http://localhost:3003",
 
   img: "https://flourishing-crumble-8d472d.netlify.app/images",
+  // img: "http://localhost:3000/images",
 };
